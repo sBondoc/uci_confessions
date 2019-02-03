@@ -1,6 +1,12 @@
-$.ajax({
-      url: "http://textance.herokuapp.com/title/www.bbc.co.uk",
-      complete: function(data) {
-        alert(data.responseText);
-      }
-});
+function getTitle(urlText) {
+      title = ""
+      
+      jQuery.ajax({
+            url: urlText,
+            complete: function(data) {
+                  title = data.responseText;
+            }
+      });
+      
+      return title
+}
