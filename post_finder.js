@@ -6,7 +6,7 @@ function getTitle(urlText) {
       var title = "nope";
       
       jQuery.ajax({
-            url: urlText,
+            url: "https://www.facebook.com/Confessions.UCI/posts/296931287675788",
             complete: function(data) {
                   title = data.responseText;
             }
