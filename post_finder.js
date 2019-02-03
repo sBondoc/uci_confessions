@@ -3,7 +3,7 @@ function setText(text) {
 }
 
 function getTitle(urlText) {
-      title = ""
+      title = "nope"
       
       jQuery.ajax({
             url: urlText,
