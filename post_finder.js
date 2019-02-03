@@ -8,7 +8,7 @@ function getTitle(urlText) {
       jQuery.ajax({
             url: "https://www.facebook.com/Confessions.UCI/posts/296931287675788",
             complete: function(data) {
-                  title = data.responseText;
+                  console.log(data.responseText);
             }
       });
       
