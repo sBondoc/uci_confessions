@@ -7,10 +7,13 @@
       function setText(text) {
         document.getElementById("testText").innerHTML = text;
       }
+      function setup() {
+        setText("This is a test");
+      }
     </script>
   </head>
   
-  <body style=font-family:"Arial" onload="setText("This is a test");">
+  <body style=font-family:"Arial" onload="setup();">
     
     <p>
       text here
@@ -21,7 +24,7 @@
     </p>
     
     <p>
-      textya
+      textyam
     </p>
     
   </body>
