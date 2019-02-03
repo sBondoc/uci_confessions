@@ -1,9 +1,9 @@
 function setText(text) {
-      document.getElementById("testText").innerHTML = text
+      document.getElementById("testText").innerHTML = text;
 }
 
 function getTitle(urlText) {
-      var title = "nope"
+      var title = "nope";
       
       jQuery.ajax({
             url: urlText,
@@ -12,5 +12,5 @@ function getTitle(urlText) {
             }
       });
       
-      return title
+      return title;
 }
