@@ -4,13 +4,13 @@
 
   <head>
     <script>
-      function setText() {
-        document.getElementById("testText").innerHTML = "This is a test"
+      function setText(text) {
+        document.getElementById("testText").innerHTML = text
       }
     </script>
   </head>
   
-  <body style=font-family:"Arial" onload="setText();">
+  <body style=font-family:"Arial" onload="setText("This is a test");">
     
     <p>
       text here
@@ -21,7 +21,7 @@
     </p>
     
     <p>
-      tex
+      texty
     </p>
     
   </body>
