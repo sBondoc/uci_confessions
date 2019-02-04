@@ -11,3 +11,7 @@ function getTitle(externalUrl){
     }
   });
 }
+
+function setText(txt) {
+  document.getElementById("testText").textContent=txt;
+}
