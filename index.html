@@ -4,24 +4,21 @@
 
   <head>    
     <script>
-      <?php
+      function title() {
+        $.ajax({
+          type: 'POST',
+          url: 'php/get_title.php',
+          success: function(data) {
+            alert(data);
+            $("p").text(data);
 
-        function get_title($url){
-          $str = file_get_contents($url);
-          if(strlen($str)>0){
-            $str = trim(preg_replace('/\s+/', ' ', $str)); // supports line breaks inside <title>
-            preg_match("/\<title\>(.*)\<\/title\>/i",$str,$title); // ignore case
-            return $title[1];
-          }
-        }
-        //Example:
-        echo get_title("http://www.washingtontimes.com/");
-
-      ?>
+            }
+        });
+      }
     </script>
   </head>
   
-  <body style=font-family:"Arial" onload="echo get_title("http://www.washingtontimes.com/");">
+  <body style=font-family:"Arial" onload="title();">
     
     <p>
       text here
