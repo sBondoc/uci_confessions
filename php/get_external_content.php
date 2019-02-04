@@ -17,3 +17,4 @@ preg_match('/<title>(.+)<\/title>/',$html,$matches);
 $title = $matches[1];
 
 echo  json_encode(array("url" => $url, "title" => $title));
+?>
