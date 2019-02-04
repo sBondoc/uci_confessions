@@ -1,5 +1,5 @@
 function getTitle(externalUrl){
-  var proxyurl = "http/localhost/get_external_content.php?url=" + externalUrl;
+  var proxyurl = "https://sBondoc.github.io/uci_confessions/php/get_external_content.php?url=" + externalUrl;
   $.ajax({
     url: proxyurl,
     async: true,
