@@ -17,6 +17,7 @@ function setText(txt) {
   document.getElementById("testText").textContent=txt;
 }
 
+function titleAlert() {
 $.ajax({
     url: "<?php echo Yii::app()->createUrl('post/geturl', array('url' => 'http://bbc.co.uk)); ?>",
     success: function(data) {
@@ -27,3 +28,4 @@ $.ajax({
         alert(title);
     }   
 });
+}
